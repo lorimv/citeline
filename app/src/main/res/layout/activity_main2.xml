@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/chapName"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Anatomy" />
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                />
+            <View
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                />
+            <View
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                />
+            <View
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                />
+            <View
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                />
+            <View
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                />
+            <View
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                />
+            <View
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                />
+            <View
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                />
+            <View
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                />
+
+            <Button
+                android:id="@+id/settings"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Settings" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/mainMenuSearch"
+                    android:layout_width="300dp"
+                    android:height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/border"
+                    android:textColorHint="#5A5A5A"
+                    android:textColor="#5A5A5A"
+                    android:drawableLeft="@android:drawable/ic_menu_search"
+                    android:hint="Search..."
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="2dp"
+                    android:textSize="25dp"
+                    android:gravity="bottom|left"/>
+
+                <LinearLayout
+                    android:id="@+id/horizootalButtonLayout11"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+                    <Button
+                        android:id="@+id/edutButtonSubject1"
+                        android:layout_marginRight="10dp"
+                        android:backgroundTint="#D2D2CF"
+                        android:onClick="editAaButtonChapter"
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        style="style/Widget.MaterialComponents.Button.Icon"
+                        android:drawableLeft="@android:drawable/ic_menu_edit" />
+                    <Button
+                        android:id="@+id/Db_Sharing"
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:text="Chapter 1 - Reproductive system" />
+                    <Button
+                        android:id="@+id/deleteButton1v"
+                        android:layout_marginLeft="10dp"
+                        android:backgroundTint="@color/design_default_color_error"
+                        android:layout_width="65dp"
+                        android:onClick="hideALayoutSecond"
+                        android:layout_height="wrap_content"
+                        style="style/Widget.MaterialComponents.Button.Icon"
+                        android:drawableLeft="@android:drawable/ic_menu_delete" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/horizootalButtonLayout12"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+                    <Button
+                        android:id="@+id/edutButtonSubject2"
+                        android:layout_marginRight="10dp"
+                        android:backgroundTint="#D2D2CF"
+                        android:onClick="editAaButtonChapter"
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        style="style/Widget.MaterialComponents.Button.Icon"
+                        android:drawableLeft="@android:drawable/ic_menu_edit" />
+                    <Button
+                        android:id="@+id/Db_Save"
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:text="Chapter 2 - nervous system" />
+                    <Button
+                        android:id="@+id/deleteButton11"
+                        android:layout_marginLeft="10dp"
+                        android:onClick="hideALayoutSecond"
+                        android:backgroundTint="@color/design_default_color_error"
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        style="style/Widget.MaterialComponents.Button.Icon"
+                        android:drawableLeft="@android:drawable/ic_menu_delete" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/horizootalButtonLayout13"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+                    <Button
+                        android:id="@+id/edutButtonSubject3"
+                        android:layout_marginRight="10dp"
+                        android:backgroundTint="#D2D2CF"
+                        android:onClick="editAaButtonChapter"
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        style="style/Widget.MaterialComponents.Button.Icon"
+                        android:drawableLeft="@android:drawable/ic_menu_edit" />
+                    <Button
+                        android:id="@+id/Db_Back"
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:text="Chapter 3 - urinary system" />
+                    <Button
+                        android:id="@+id/deleteButton12"
+                        android:layout_marginLeft="10dp"
+                        android:onClick="hideALayoutSecond"
+                        android:backgroundTint="@color/design_default_color_error"
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        style="style/Widget.MaterialComponents.Button.Icon"
+                        android:drawableLeft="@android:drawable/ic_menu_delete" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/horizootalButtonLayout14"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+                    <Button
+                        android:id="@+id/edutButtonSubject4"
+                        android:layout_marginRight="10dp"
+                        android:backgroundTint="#D2D2CF"
+                        android:onClick="editAaButtonChapter"
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        style="style/Widget.MaterialComponents.Button.Icon"
+                        android:drawableLeft="@android:drawable/ic_menu_edit" />
+                    <Button
+                        android:id="@+id/Db_appInfo"
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:text="Chapter 4 - digestive tract" />
+                    <Button
+                        android:id="@+id/deleteButton13"
+                        android:layout_marginLeft="10dp"
+                        android:onClick="hideALayoutSecond"
+                        android:backgroundTint="@color/design_default_color_error"
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        style="style/Widget.MaterialComponents.Button.Icon"
+                        android:drawableLeft="@android:drawable/ic_menu_delete" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/horizootalButtonLayout15"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+                    <Button
+                        android:id="@+id/edutButtonSubject5"
+                        android:layout_marginRight="10dp"
+                        android:backgroundTint="#D2D2CF"
+                        android:onClick="editAaButtonChapter"
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        style="style/Widget.MaterialComponents.Button.Icon"
+                        android:drawableLeft="@android:drawable/ic_menu_edit" />
+                    <Button
+                        android:id="@+id/Db_appInfo2"
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:text="Chapter 5 - endocrine system" />
+                    <Button
+                        android:id="@+id/deleteButt14"
+                        android:layout_marginLeft="10dp"
+                        android:onClick="hideALayoutSecond"
+                        android:backgroundTint="@color/design_default_color_error"
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        style="style/Widget.MaterialComponents.Button.Icon"
+                        android:drawableLeft="@android:drawable/ic_menu_delete" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/app3"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="0.5">
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageViewSecond"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/first_button"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/app3orig"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.5">
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/app3clone"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.5">
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/addChapter"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="addNewChapter"
+                    android:text="Add Chapter +" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/openContent"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="Open" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

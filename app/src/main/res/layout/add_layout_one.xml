@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/addLayoutOneHide"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="58dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/horizootalButtonLayout4"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <Button
+            android:id="@+id/edutButtonAddLayoutOne"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#D2D2CF"
+            android:onClick="editAaButtonMain"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            style="style/Widget.MaterialComponents.Button.Icon"
+            android:drawableLeft="@android:drawable/ic_menu_edit" />
+        <Button
+            android:id="@+id/addedButton"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="Subject 3"
+            android:onClick="openNoteActivity"
+            style="style/Widget.MaterialComponents.Button.Icon"
+            app:icon="@android:drawable/ic_menu_gallery" />
+        <Button
+            android:id="@+id/deleteButtonMain"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="@color/design_default_color_error"
+            android:layout_width="65dp"
+            android:onClick="hideALayoutMain"
+            android:layout_height="wrap_content"
+            style="style/Widget.MaterialComponents.Button.Icon"
+            android:drawableLeft="@android:drawable/ic_menu_delete" />
+    </LinearLayout>
+</LinearLayout>

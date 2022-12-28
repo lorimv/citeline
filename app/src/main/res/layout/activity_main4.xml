@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/Db_New"
+                android:layout_width="250dp"
+                android:onClick="onButtonShowPopupWindowClick5"
+                android:layout_height="wrap_content"
+                android:text="Themes" />
+
+            <Button
+                android:id="@+id/Db_Print"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Citation Settings" />
+
+            <Button
+                android:id="@+id/Db_Sharing"
+                android:layout_width="250dp"
+                android:onClick="onButtonShowPopupWindowClick7"
+                android:layout_height="wrap_content"
+                android:text="Sharing" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/Db_Save"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:onClick="onButtonShowPopupWindowClick3"
+                android:text="Account" />
+
+            <Button
+                android:id="@+id/Db_Back"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:onClick="onButtonShowPopupWindowClick2"
+                android:text="Support" />
+            <Button
+                android:id="@+id/Db_appInfo"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:onClick="onButtonShowPopupWindowClick"
+                android:text="App Info" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

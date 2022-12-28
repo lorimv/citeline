@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/addLayoutTwoHide"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="58dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/horizootalButtonLayout103"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <Button
+            android:id="@+id/edutButtonSubjectAdded"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#D2D2CF"
+            android:onClick="editAaButtonChapter"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            style="style/Widget.MaterialComponents.Button.Icon"
+            android:drawableLeft="@android:drawable/ic_menu_edit" />
+        <Button
+            android:id="@+id/addedButton2"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:onClick="showSelectedBtn"
+            android:text="Chapter 5 - respiratory system" />
+        <Button
+            android:id="@+id/deleteButtonSecond"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="@color/design_default_color_error"
+            android:layout_width="65dp"
+            android:onClick="hideALayoutSecond"
+            android:layout_height="wrap_content"
+            style="style/Widget.MaterialComponents.Button.Icon"
+            android:drawableLeft="@android:drawable/ic_menu_delete" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:weightSum="2">
+
+    <LinearLayout android:id="@+id/outside_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center_vertical">
+
+        <LinearLayout android:id="@+id/horizontal_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="wrap_content"
+                android:textColor="#979797"
+                android:textColorHint="@color/black"
+                android:text="Notes"
+                android:textSize="32dp"
+                android:gravity="center"/>
+            <LinearLayout
+                android:id="@+id/horizootalButtonLayoutSearch"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/mainMenuSearch"
+                    android:layout_width="400dp"
+                    android:background="@drawable/border"
+                    android:textColorHint="#5A5A5A"
+                    android:textColor="#5A5A5A"
+                    android:drawableLeft="@android:drawable/ic_menu_search"
+                    android:hint="Search..."
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="28dp"
+                    android:gravity="left"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/horizootalButtonLayout1"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <Button
+                    android:id="@+id/edutButton1"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="#D2D2CF"
+                    android:onClick="editAaButtonMain"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    style="style/Widget.MaterialComponents.Button.Icon"
+                    android:drawableLeft="@android:drawable/ic_menu_edit" />
+                <Button
+                    android:id="@+id/Db_New"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:text="Biology"
+                    style="style/Widget.MaterialComponents.Button.Icon"
+                    app:icon="@android:drawable/ic_menu_gallery"/>
+                <Button
+                    android:id="@+id/deleteButton1"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="@color/design_default_color_error"
+                    android:onClick="hideALayoutMain"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    style="style/Widget.MaterialComponents.Button.Icon"
+                    android:drawableLeft="@android:drawable/ic_menu_delete" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/horizootalButtonLayout2"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <Button
+                    android:id="@+id/edutButton2"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="#D2D2CF"
+                    android:onClick="editAaButtonMain"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    style="style/Widget.MaterialComponents.Button.Icon"
+                    android:drawableLeft="@android:drawable/ic_menu_edit" />
+                <Button
+                    android:id="@+id/goSecond"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:text="Anatomy"
+                    style="style/Widget.MaterialComponents.Button.Icon"
+                    app:icon="@android:drawable/ic_menu_gallery" />
+                <Button
+                    android:id="@+id/deleteButton2"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="@color/design_default_color_error"
+                    android:layout_width="65dp"
+                    android:onClick="hideALayoutMain"
+                    android:layout_height="wrap_content"
+                    style="style/Widget.MaterialComponents.Button.Icon"
+                    android:drawableLeft="@android:drawable/ic_menu_delete" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/horizootalButtonLayou3"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <Button
+                    android:id="@+id/edutButton3"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="#D2D2CF"
+                    android:onClick="editAaButtonMain"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    style="style/Widget.MaterialComponents.Button.Icon"
+                    android:drawableLeft="@android:drawable/ic_menu_edit" />
+                <Button
+                    android:id="@+id/Db_Sharing"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:text="Subject 3"
+                    style="style/Widget.MaterialComponents.Button.Icon"
+                    app:icon="@android:drawable/ic_menu_gallery" />
+                <Button
+                    android:id="@+id/deleteButton3"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="@color/design_default_color_error"
+                    android:layout_width="65dp"
+                    android:onClick="hideALayoutMain"
+                    android:layout_height="wrap_content"
+                    style="style/Widget.MaterialComponents.Button.Icon"
+                    android:drawableLeft="@android:drawable/ic_menu_delete" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/app2"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/app3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="4"
+            android:gravity="center"
+            android:layout_gravity="center_vertical">
+            <LinearLayout
+                android:id="@+id/horizootalButtonLayou9"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <Button
+                    android:id="@+id/edutButton5"
+                     android:visibility="invisible"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="#D2D2CF"
+                    android:onClick="editButtonMain"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    style="style/Widget.MaterialComponents.Button.Icon"
+                    android:drawableLeft="@android:drawable/ic_menu_edit" />
+                <Button
+                    android:id="@+id/addNewButton"
+                    android:layout_width="350dp"
+                    android:paddingRight="17dp"
+                    android:layout_height="wrap_content"
+                    android:text="New"
+                    style="style/Widget.MaterialComponents.Button.Icon"
+                    app:icon="@android:drawable/ic_menu_add" />
+                <Button
+                    android:id="@+id/deleteButton9"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="#93C572"
+                    android:visibility="invisible"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    style="style/Widget.MaterialComponents.Button.Icon"
+                    android:drawableLeft="@android:drawable/ic_menu_set_as" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/goToSettings"
+                android:layout_width="230dp"
+                android:layout_marginLeft="2dp"
+
+                style="style/Widget.MaterialComponents.Button.Icon"
+                app:icon="@android:drawable/ic_menu_info_details"
+
+                android:layout_height="wrap_content"
+                android:onClick="goToSettings"
+                android:text="Settings"
+/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
